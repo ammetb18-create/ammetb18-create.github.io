@@ -551,3 +551,45 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+
+.hero-actions-upgraded {
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+
+.cta-main {
+  min-width: 190px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  border-radius: 22px;
+  padding: 16px 18px;
+}
+
+.cta-main span {
+  font-size: 0.98rem;
+  font-weight: 900;
+}
+
+.cta-main small {
+  font-size: 0.74rem;
+  color: rgba(245, 247, 251, 0.72);
+  font-weight: 700;
+}
+
+.cta-main.primary small {
+  color: rgba(7, 17, 31, 0.72);
+}
+
+.hero-hint {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 4px;
+  max-width: 680px;
+}
+
+@media (max-width: 700px) {
+  .cta-main {
+    width: 100%;
+  }
+}
