@@ -82,3 +82,55 @@ function activateCatMode() {
 if (catModeButton) {
   catModeButton.addEventListener("click", activateCatMode);
 }
+
+
+
+// Running Cats Easter Egg
+const catRunButton = document.getElementById("catRunButton");
+
+function showCatRunToast() {
+  const existingToast = document.querySelector(".cat-run-toast");
+  if (existingToast) existingToast.remove();
+
+  const toast = document.createElement("div");
+  toast.className = "cat-run-toast";
+  toast.textContent = "Tiny debugging team deployed 🐈‍⬛✨";
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    toast.remove();
+  }, 2900);
+}
+
+function releaseRunningCats() {
+  const cats = ["🐈‍⬛", "🐈", "🐾"];
+  const totalCats = 12;
+
+  showCatRunToast();
+
+  for (let i = 0; i < totalCats; i++) {
+    const cat = document.createElement("span");
+    cat.className = "running-cat";
+    cat.textContent = cats[Math.floor(Math.random() * cats.length)];
+
+    const bottom = 18 + Math.random() * 130;
+    const size = 24 + Math.random() * 22;
+    const duration = 2.8 + Math.random() * 2.2;
+    const delay = i * 0.16;
+
+    cat.style.bottom = `${bottom}px`;
+    cat.style.fontSize = `${size}px`;
+    cat.style.animationDuration = `${duration}s`;
+    cat.style.animationDelay = `${delay}s`;
+
+    document.body.appendChild(cat);
+
+    setTimeout(() => {
+      cat.remove();
+    }, (duration + delay) * 1000 + 500);
+  }
+}
+
+if (catRunButton) {
+  catRunButton.addEventListener("click", releaseRunningCats);
+}
