@@ -523,3 +523,17 @@ footer {
     align-items: flex-start;
   }
 }
+
+.roadmap-status {
+  display: inline-flex;
+  margin-bottom: 16px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(101, 214, 255, 0.10);
+  border: 1px solid rgba(101, 214, 255, 0.24);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
