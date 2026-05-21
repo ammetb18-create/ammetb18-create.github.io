@@ -631,3 +631,32 @@ footer {
   box-shadow: 0 18px 48px rgba(124, 58, 237, 0.28);
 }
 
+
+/* Strong colored hero CTA buttons */
+.hero-actions-upgraded .cta-main:nth-child(1) {
+  background: linear-gradient(135deg, #38bdf8 0%, #6366f1 55%, #8b5cf6 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.30) !important;
+}
+
+.hero-actions-upgraded .cta-main:nth-child(2) {
+  background: linear-gradient(135deg, #06b6d4 0%, #2563eb 55%, #1e40af 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(125, 211, 252, 0.40) !important;
+}
+
+.hero-actions-upgraded .cta-main:nth-child(3) {
+  background: linear-gradient(135deg, #8b5cf6 0%, #4f46e5 45%, #1e3a8a 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(196, 181, 253, 0.40) !important;
+}
+
+.hero-actions-upgraded .cta-main small {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.hero-actions-upgraded .cta-main:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 20px 48px rgba(101, 214, 255, 0.25) !important;
+}
+
