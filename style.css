@@ -832,3 +832,13 @@ footer {
   opacity: 0;
   animation: toastPop 2.7s ease forwards;
 }
+
+.hero-actions-upgraded .resume-cta {
+  background: linear-gradient(135deg, #10b981 0%, #0ea5e9 48%, #6366f1 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(167, 243, 208, 0.42) !important;
+}
+
+.hero-actions-upgraded .resume-cta small {
+  color: rgba(255, 255, 255, 0.84) !important;
+}
