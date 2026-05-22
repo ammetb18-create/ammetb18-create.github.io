@@ -880,3 +880,41 @@ footer {
   color: #d9ecff;
   font-size: 0.85rem;
 }
+
+/* Force standard project card buttons and tags */
+.project-card .project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #62d7ff, #9b7cff);
+  color: #04111f !important;
+  font-weight: 800;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(98, 215, 255, 0.18);
+}
+
+.project-card .project-link:hover {
+  transform: translateY(-1px);
+  text-decoration: none !important;
+}
+
+.project-card .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.project-card .project-tags span {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(180, 200, 230, 0.22);
+  background: rgba(255, 255, 255, 0.06);
+  color: #d9ecff;
+  font-size: 0.85rem;
+}
